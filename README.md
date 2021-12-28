@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# Boas vindas ao repositório do projeto de Carrinho de Compras! 🛒💨
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+>## SUMÁRIO
 
-In the project directory, you can run:
+  - [O que será desenvolvido](#o-que-será-desenvolvido)
+  - [Imagens do Projeto](#protótipo-do-projeto)
+  - [API Shopping Cart](#api-shopping-cart)
+  - [Caso queira contribuir:](#antes-de-começar-a-desenvolver)
+  - [Dicas durante o desenvolvimento](#durante-o-desenvolvimento)
+---
 
-### `npm start`
+>## Sobre
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Nesse projeto, você será capaz de:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  - Fazer requisições a uma API *(Application Programming Interface)* do Mercado Livre e montar o seu carrinho de compras :D
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+>## O que será desenvolvido
 
-### `npm run build`
+- Nesse projeto consiste em montar um **carrinho de compras** totalmente dinâmico! E o melhor: consumindo dados diretamente de uma **API!** Isso mesmo. Da sigla em inglês _Application Programming Interface_, uma API é um ponto de contato na internet com determinado serviço. Através de **requisições HTTP** a essa API é possível interagir com ela da forma como quem a criou planejou. Aqui usaremos a API do Mercado Livre para buscarmos produtos à venda.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+>## Imagens do Projeto
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Project Gif](./src/img/out.gif)
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+>## API Shopping Cart
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- O [manual da API do Mercado Livre](https://developers.mercadolivre.com.br/pt_br/itens-e-buscas) contém muitas informações sobre ela.
+- Utilizaremos alguns dos _endpoints_, e a forma de uso está detalhada no manual.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+>## Caso queira contribuir:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Clone o repositório
+  * `git clone git@github.com:LuisCarlosCruz/carrinho-de-compras.git`.
+  * Entre na pasta do repositório que você acabou de clonar:
+    * `cd carrinho-de-compras`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Instale as dependências e inicialize o projeto
+  * Instale as dependências:
+    * `npm install`
+  * Inicialize o projeto:
+    * `npm start` (uma nova página deve abrir no seu navegador com um texto simples)
 
-### Code Splitting
+3. Crie uma branch a partir da branch `master`
+  * Verifique que você está na branch `master`
+    * Exemplo: `git branch`
+  * Se não estiver, mude para a branch `master`
+    * Exemplo: `git checkout master`
+  * Agora, crie uma branch onde você vai guardar os commits do seu projeto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+>## Dicas durante o desenvolvimento
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* Faça `commits` das alterações que você fizer no código regularmente;
 
-### Making a Progressive Web App
+* Lembre-se de sempre após um ~~(ou alguns)~~ `commits` atualizar o repositório remoto (o famoso `git push`);
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+* Os comandos que você utilizará com mais frequência são:
 
-### Advanced Configuration
+  1. `git status` _(para verificar o que está em vermelho - fora do stage - e o que está em verde - no stage)_;
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+  2. `git add` _(para adicionar arquivos ao stage do Git)_;
 
-### Deployment
+  3. `git commit` _(para criar um commit com os arquivos que estão no stage do Git)_;
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+  4. `git push -u nome-da-branch` _(para enviar o commit para o repositório remoto na primeira vez que fizer o `push` de uma nova branch)_;
 
-### `npm run build` fails to minify
+  5. `git push` _(para enviar o commit para o repositório remoto após o passo anterior)_.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
