@@ -1,9 +1,11 @@
+import Header from "../src/componentes/header/Header";
+import Provider from "./context/Provider";
 
 function App() {
   return (
-    <div className="App">
-      <h2>Shooping Cart </h2>
-    </div>
+    <Provider>
+      <Header />
+    </Provider>
   );
 }
 
