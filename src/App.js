@@ -1,5 +1,5 @@
-import Header from "../src/componentes/header/Header";
-import Provider from "./context/Provider";
+import Header from './componentes/header/Header';
+import Provider from './context/Provider';
 
 function App() {
   return (
