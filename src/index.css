@@ -7,10 +7,31 @@ body {
   background-color: #b4b4b4;
 }
 
+/* ESTILIZACAO SO DE RASCUNHO */
+
 .icon-home {
   width: 20px;
 }
 
-.icon-rede {
+.icon-redes {
   width: 35px;
+}
+
+.img-propaganda-home {
+  width: 80%;
+}
+
+body section {
+  display: flex;
+  justify-content: space-around;
+}
+
+body section div{
+  display: flex;
+  flex-direction: column;
+}
+
+.icone-carrinho {
+  width: 45px;
+  margin-top: 1rem;
 }
