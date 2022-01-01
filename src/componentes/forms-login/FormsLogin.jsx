@@ -20,9 +20,9 @@ const FormsLogin = () => {
       <button type="submit" form="form-login">
         Fazer Login
       </button>
-      <img src={googleIcon} alt="icon-google" className="icon-rede" />
-      <img src={gitHubIcon} alt="icon-gitHub" className="icon-rede" />
-      <img src={facebookIcon} alt="icon-facebook" className="icon-rede" />
+      <img src={googleIcon} alt="icon-google" className="icon-redes" />
+      <img src={gitHubIcon} alt="icon-gitHub" className="icon-redes" />
+      <img src={facebookIcon} alt="icon-facebook" className="icon-redes" />
     </div>
   );
 };
