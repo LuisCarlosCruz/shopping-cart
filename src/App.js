@@ -1,10 +1,15 @@
 import LoginPage from './pages/LoginPage';
 import Provider from './context/Provider';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
     <Provider>
-      <LoginPage />
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/login" component={LoginPage} />
+        </Switch>
+      </BrowserRouter>
     </Provider>
   );
 }
