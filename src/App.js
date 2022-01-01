@@ -1,4 +1,4 @@
-import LoginPage from './pages/LoginPage';
+import Login from './pages/Login';
 import Provider from './context/Provider';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
@@ -7,7 +7,7 @@ function App() {
     <Provider>
       <BrowserRouter>
         <Switch>
-          <Route exact path="/login" component={LoginPage} />
+          <Route exact path="/login" component={Login} />
         </Switch>
       </BrowserRouter>
     </Provider>

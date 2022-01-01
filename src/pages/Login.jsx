@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../componentes/header/Header';
 import FormsLogin from '../componentes/forms-login/FormsLogin';
 
-const LoginPage = () => {
+const Login = () => {
   return (
     <div>
       <Header />
@@ -11,4 +11,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default Login;
