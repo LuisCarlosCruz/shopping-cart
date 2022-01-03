@@ -3,10 +3,10 @@ import Context from '../../context/Context';
 import fetchMercadoLivre from '../../services/fetchMercadoLivre';
 
 const BuscaItem = () => {
-  const { listaItemBuscado, setlistaItemBuscado } = useContext(Context);
+  const { nomeItemBuscado, setNomeItemBuscado, setListaItemBuscado } = useContext(Context);
 
   const handleOnClick = () => {
-    fetchMercadoLivre(listaItemBuscado);
+    fetchMercadoLivre(nomeItemBuscado, setListaItemBuscado);
   };
 
   return (
@@ -14,7 +14,7 @@ const BuscaItem = () => {
       <label htmlFor="buscaItem">
         <input
           type="text"
-          onChange={({ target }) => setlistaItemBuscado(target.value)}
+          onChange={({ target }) => setNomeItemBuscado(target.value)}
           id="buscaItem"
           placeholder=" produto..."
         />

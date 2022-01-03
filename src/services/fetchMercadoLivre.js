@@ -1,9 +1,9 @@
-const fetchMercadoLivre = (itemBuscado) => {
-  const URL = `https://api.mercadolibre.com/sites/MLB/search?q=${itemBuscado}`;
+const fetchMercadoLivre = (nomeItemBuscado, setListaItemBuscado) => {
+  const URL = `https://api.mercadolibre.com/sites/MLB/search?q=${nomeItemBuscado}`;
 
   const busca = fetch(URL)
     .then((resp) => resp.json())
-    .then((data) => console.log(data.results));
+    .then((data) => setListaItemBuscado(data.results));
   return busca;
 };
 
