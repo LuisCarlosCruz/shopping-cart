@@ -3,11 +3,17 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 const Provider = ({ children }) => {
-  const [itemBuscado, setItemBuscado] = useState([]);
+  const [nomeItemBuscado, setNomeItemBuscado] = useState('');
+  const [listaItemBuscado, setListaItemBuscado] = useState([]);
+  const [itemSelecionado, setItemSelecionado] = useState({});
 
   const contextValue = {
-    itemBuscado,
-    setItemBuscado,
+    listaItemBuscado,
+    setListaItemBuscado,
+    nomeItemBuscado,
+    setNomeItemBuscado,
+    itemSelecionado,
+    setItemSelecionado,
   };
 
   return <Context.Provider value={contextValue}>{children}</Context.Provider>;
