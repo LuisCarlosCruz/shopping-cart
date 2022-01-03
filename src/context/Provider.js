@@ -3,18 +3,18 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 const Provider = ({ children }) => {
-  const [emailIsValid, setEmailIsValid] = useState(false);
+  const [itemBuscado, setItemBuscado] = useState([]);
 
   const contextValue = {
-    emailIsValid,
-    setEmailIsValid,
+    itemBuscado,
+    setItemBuscado,
   };
 
   return <Context.Provider value={contextValue}>{children}</Context.Provider>;
 };
 
-export default Provider;
-
 Provider.propTypes = {
   children: PropTypes.element,
 };
+
+export default Provider;
