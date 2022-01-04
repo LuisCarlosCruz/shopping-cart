@@ -6,7 +6,7 @@ const CartItens = () => {
   const { listaItemBuscado, setItemSelecionado } = useContext(Context);
 
   const handleOnClick = (item) => {
-    // window.location.assign('/login'); // Redireciona p/ a pag de detalhes
+    window.location.assign('/Details'); // Redireciona p/ a pag de detalhes
     setItemSelecionado(item);
   };
 
