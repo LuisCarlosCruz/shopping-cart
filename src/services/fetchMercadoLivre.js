@@ -14,7 +14,7 @@ function embarralharArray(data) {
   }
   // Retornando array com aleatoriedade
 
-  return data.slice(0, 6);
+  return data;
 }
 
 export const fetchMercadoLivreCategoria = (category_id, setListaItemRecomendados) => {
