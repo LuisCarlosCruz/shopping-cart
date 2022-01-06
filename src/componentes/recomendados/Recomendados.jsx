@@ -1,16 +1,36 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
+import Context from '../../context/Context';
+import { fetchMercadoLivreCategoria } from '../../services/fetchMercadoLivre';
 
 const Recomendados = () => {
+  const {
+    itemSelecionado: { category_id },
+    listaItemRecomendados,
+    setListaItemRecomendados,
+    listaItemBuscado,
+  } = useContext(Context);
+
+  useEffect(() => {
+    fetchMercadoLivreCategoria(category_id, setListaItemRecomendados);
+  }, []);
+
   return (
     <div>
-      <h3>Recomendados</h3>
-      <section>
-        <p>item</p>
-        <p>item</p>
-        <p>item</p>
-        <p>item</p>
-        <p>item</p>
-      </section>
+      {listaItemBuscado.length !== 0 && (
+        <div>
+          <h3>Recomendados</h3>
+          <section>
+            {listaItemRecomendados.map((item) => {
+              return (
+                <div key={item.id} style={{ width: '100px' }}>
+                  <img src={item.thumbnail} alt="imagem produto" />
+                  <p>R$: {item.price}</p>
+                </div>
+              );
+            })}
+          </section>
+        </div>
+      )}
     </div>
   );
 };

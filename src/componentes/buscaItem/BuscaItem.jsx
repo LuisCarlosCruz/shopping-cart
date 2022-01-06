@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import Context from '../../context/Context';
-import fetchMercadoLivre from '../../services/fetchMercadoLivre';
+import { fetchMercadoLivre } from '../../services/fetchMercadoLivre';
 
 const BuscaItem = () => {
   const { nomeItemBuscado, setNomeItemBuscado, setListaItemBuscado } = useContext(Context);
