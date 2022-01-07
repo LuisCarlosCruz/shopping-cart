@@ -10,8 +10,6 @@ const Recomendados = () => {
     listaItemBuscado,
   } = useContext(Context);
 
-  const listaSeisItensRecomendados = listaItemRecomendados.slice(0, 6);
-
   useEffect(() => {
     fetchMercadoLivreCategoria(category_id, setListaItemRecomendados);
   }, []);
@@ -22,7 +20,7 @@ const Recomendados = () => {
         <div>
           <h3>Recomendados</h3>
           <section>
-            {listaSeisItensRecomendados.map((item) => {
+            {listaItemRecomendados.map((item) => {
               return (
                 <div key={item.id} style={{ width: '100px' }}>
                   <img src={item.thumbnail} alt="imagem produto" />
