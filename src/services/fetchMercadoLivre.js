@@ -16,29 +16,35 @@ function embarralharArray(data) {
   return data.slice(0, 6);
 }
 
-// export const fetchMercadoLivreCategoria = (category_id, setListaItemRecomendados) => {
-//   const URL = `https://api.mercadolibre.com/sites/MLB/search?category=${category_id}`;
+export const fetchListaCategorias = (setListaCategoria) => {
+  const URL = `https://api.mercadolibre.com/sites/MLB/categories`;
 
-//   const busca = fetch(URL)
-//     .then((resp) => resp.json())
-//     .then((data) => {
-//       setListaItemRecomendados(embarralharArray(data.results));
-//     });
-//   return busca;
-// };
+  const busca = fetch(URL)
+    .then((resp) => resp.json())
+    .then((data) => {
+      setListaCategoria(data);
+    });
+  return busca;
+};
 
-export const fetchMercadoLivreCategoria = (
-  category_id,
-  setListaItemRecomendados,
-  terceiroParam
-) => {
+export const fetchRecomendados = (category_id, setListaItemRecomendados) => {
   const URL = `https://api.mercadolibre.com/sites/MLB/search?category=${category_id}`;
 
   const busca = fetch(URL)
     .then((resp) => resp.json())
     .then((data) => {
-      if (!terceiroParam) setListaItemRecomendados(embarralharArray(data.results));
-      else console.log(data.results);
+      setListaItemRecomendados(embarralharArray(data.results));
+      console.log(data);
     });
+  return busca;
+};
+
+//
+export const fetchCategoriaSelecionada = (category_id, funcaoParam) => {
+  const URL = `https://api.mercadolibre.com/sites/MLB/search?category=${category_id}`;
+
+  const busca = fetch(URL)
+    .then((resp) => resp.json())
+    .then((data) => funcaoParam(data.results));
   return busca;
 };

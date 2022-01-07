@@ -7,6 +7,7 @@ const Provider = ({ children }) => {
   const [listaItemBuscado, setListaItemBuscado] = useState([]);
   const [itemSelecionado, setItemSelecionado] = useState({});
   const [listaItemRecomendados, setListaItemRecomendados] = useState([]);
+  const [listaCategorias, setListaCategorias] = useState(null);
 
   const contextValue = {
     listaItemBuscado,
@@ -17,6 +18,8 @@ const Provider = ({ children }) => {
     setItemSelecionado,
     listaItemRecomendados,
     setListaItemRecomendados,
+    listaCategorias,
+    setListaCategorias,
   };
 
   return <Context.Provider value={contextValue}>{children}</Context.Provider>;
