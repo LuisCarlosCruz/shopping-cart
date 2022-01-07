@@ -4,6 +4,7 @@ import BuscaItem from '../componentes/buscaItem/BuscaItem';
 import SectionItens from '../componentes/sectionItens/SectionItens';
 import Header from '../componentes/header/Header';
 import Recomendados from '../componentes/recomendados/Recomendados';
+import ListaCategoria from '../componentes/listaCategoria/ListaCategoria';
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Header />
       <Nav />
       <BuscaItem />
+      <ListaCategoria />
       {/* Lista de Categoria */}
       <SectionItens />
       {/* sideBar propaganda */}
