@@ -11,7 +11,9 @@ const Home = () => {
       <Header />
       <Nav />
       <BuscaItem />
+      {/* Lista de Categoria */}
       <SectionItens />
+      {/* sideBar propaganda */}
       <Recomendados />
       {/* Criar o Footer */}
     </div>
