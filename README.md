@@ -1,4 +1,4 @@
-# Boas vindas ao repositório do projeto de Carrinho de Compras! 🛒💨
+# Boas vindas ao repositório do projeto Shopping Cart! 🛒💨
 
 
 >## SUMÁRIO
