@@ -24,9 +24,9 @@
 
 ---
 
->## Imagens do Projeto
+>## Imagem do Projeto
 
-![Project Gif](./src/img/out.gif)
+<img src="./src/img/prototipoShoppingCart.png" width="890" alt="protótipo shopping cart">
 
 ---
 
