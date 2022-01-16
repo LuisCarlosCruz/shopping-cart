@@ -3,7 +3,7 @@ import Context from '../../context/Context';
 import homeIcon from '../../img/icons/homeIcon.svg';
 
 const Header = () => {
-  const pathnameDetails = window.location.pathname.includes('/details');
+  // const pathnameDetails = window.location.pathname.includes('/details');
   const pathname = window.location.pathname;
 
   return (
@@ -12,7 +12,7 @@ const Header = () => {
         <div>
           {pathname !== '/' && <img src={homeIcon} alt="icon-home" className="icon-home" />}
           <h1>Shopping Cart App</h1>
-          {pathnameDetails && <button>Carrinho</button>}
+          {/* {pathnameDetails && <button>Carrinho</button>} */}
         </div>
       )}
     </Context.Consumer>
