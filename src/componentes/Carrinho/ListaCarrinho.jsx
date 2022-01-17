@@ -1,6 +1,10 @@
 import React from 'react';
+// import Context from '../../context/Context';
 
 const ListaCarrinho = () => {
+  // const { itemSelecionado } = useContext(Context);
+  // console.log(itemSelecionado);
+
   return (
     <div style={{ display: 'flex' }}>
       <section>

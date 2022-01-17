@@ -29,7 +29,7 @@ const SectionDetails = () => {
           <p>{free_shipping && 'Frete grátis'}</p>
           <p>Quantidade disponível: {available_quantity}</p>
           <div>
-            <button type="button">carrinho</button>
+            <button type="button">Adicionar ao Carrinho</button>
             <br />
             <button type="button">Comprar agora</button>
           </div>
