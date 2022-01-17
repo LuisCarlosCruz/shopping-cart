@@ -1,3 +1,5 @@
+import React from 'react';
+
 const ListaCarrinho = () => {
   return (
     <div style={{ display: 'flex' }}>
