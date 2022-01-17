@@ -34,7 +34,7 @@ export const fetchRecomendados = (category_id, setListaItemRecomendados) => {
     .then((resp) => resp.json())
     .then((data) => {
       setListaItemRecomendados(embarralharArray(data.results));
-      console.log(data);
+      // console.log(data);
     });
   return busca;
 };

@@ -1,8 +1,9 @@
 import React, { useContext } from 'react';
 import Context from '../../context/Context';
+import adicionaItemCarrinho from '../../functions/adicionaItemCarrinho';
 
 const SectionDetails = () => {
-  const { itemSelecionado } = useContext(Context);
+  const { itemSelecionado, listaCarrinho } = useContext(Context);
   const {
     thumbnail,
     title,
@@ -29,7 +30,11 @@ const SectionDetails = () => {
           <p>{free_shipping && 'Frete grátis'}</p>
           <p>Quantidade disponível: {available_quantity}</p>
           <div>
-            <button type="button">carrinho</button>
+            <button
+              type="button"
+              onClick={() => adicionaItemCarrinho(itemSelecionado, listaCarrinho)}>
+              Adicionar ao Carrinho
+            </button>
             <br />
             <button type="button">Comprar agora</button>
           </div>
