@@ -1,6 +1,6 @@
-// import { useContext } from "react";
+const adicionaItemCarrinho = (itemSelecionado, listaCarrinho) => {
+  listaCarrinho.push(itemSelecionado);
+  console.log(Array.from(listaCarrinho));
+};
 
-// export const adicionaItemCarrinho = (itemSelecionado) => {
-  
-
-// };
+export default adicionaItemCarrinho;
