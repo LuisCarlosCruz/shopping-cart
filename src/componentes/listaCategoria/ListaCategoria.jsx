@@ -10,9 +10,9 @@ const ListaCategoria = () => {
   const { listaCategorias, setListaItemBuscado, setListaCategorias, setListaItemRecomendados } =
     useContext(Context);
 
-  useEffect(() => {
-    fetchListaCategorias(setListaCategorias);
-    fetchRecomendados('MLB5672', setListaItemRecomendados);
+  useEffect(async () => {
+    await fetchListaCategorias(setListaCategorias);
+    await fetchRecomendados('MLB5672', setListaItemRecomendados);
   }, []);
 
   return (
