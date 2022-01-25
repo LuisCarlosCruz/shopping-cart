@@ -1,10 +1,10 @@
 import React, { useContext, useEffect } from 'react';
-import Context from '../../context/Context';
+import Context from '../../store/Context';
 import {
   fetchCategoriaSelecionada,
   fetchListaCategorias,
   fetchRecomendados,
-} from '../../services/fetchMercadoLivre';
+} from '../../environments/api/fetchMercadoLivre';
 
 const ListaCategoria = () => {
   const { listaCategorias, setListaItemBuscado, setListaCategorias, setListaItemRecomendados } =

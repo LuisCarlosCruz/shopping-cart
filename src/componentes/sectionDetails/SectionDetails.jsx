@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-import Context from '../../context/Context';
-import adicionaItemCarrinho from '../../functions/adicionaItemCarrinho';
+import Context from '../../store/Context';
+import adicionaItemCarrinho from '../../utils/adicionaItemCarrinho';
 
 const SectionDetails = () => {
   const { itemSelecionado, listaCarrinho } = useContext(Context);

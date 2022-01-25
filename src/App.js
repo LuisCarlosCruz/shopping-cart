@@ -1,5 +1,5 @@
 import Login from './pages/Login';
-import Provider from './context/Provider';
+import Provider from './store/Provider';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './pages/Home';
 import Details from './pages/Details';

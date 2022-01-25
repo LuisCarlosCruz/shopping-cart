@@ -1,5 +1,5 @@
 import React from 'react';
-import Context from '../../context/Context';
+import Context from '../../store/Context';
 import homeIcon from '../../img/icons/homeIcon.svg';
 
 const Header = () => {

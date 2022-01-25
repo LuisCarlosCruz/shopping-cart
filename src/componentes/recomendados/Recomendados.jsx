@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from 'react';
-import Context from '../../context/Context';
-import { fetchRecomendados } from '../../services/fetchMercadoLivre';
+import Context from '../../store/Context';
+import { fetchRecomendados } from '../../environments/api/fetchMercadoLivre';
 
 const Recomendados = () => {
   const {
