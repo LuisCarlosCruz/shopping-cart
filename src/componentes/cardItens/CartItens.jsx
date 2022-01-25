@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
-import Context from '../../context/Context';
+import Context from '../../store/Context';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import selecionaItem from '../../functions/selecionaItem';
+import selecionaItem from '../../utils/selecionaItem';
 
 const CartItens = () => {
   const { listaItemBuscado, setItemSelecionado } = useContext(Context);

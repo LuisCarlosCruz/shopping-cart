@@ -1,6 +1,6 @@
 import React from 'react';
-import imgPropaganda from '../../img/imgPropaganda.png';
-import imgCarrinho from '../../img/imgCarrinho.png';
+import imgPropaganda from '../../assets/imgPropaganda.png';
+import imgCarrinho from '../../assets/imgCarrinho.png';
 
 const Nav = () => {
   const handleOnClick = () => {
